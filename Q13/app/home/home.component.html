@@ -1,0 +1,10 @@
+<a routerLink = '/product'>Sample Registration</a> <br><br>
+
+<table>
+  <th>Name</th>
+  <th>Color</th>
+  <tr *ngFor = "let product of products">
+    <td>{{product.name}}</td>
+    <td>{{product.color}}</td>
+  </tr>
+</table>

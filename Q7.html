@@ -1,0 +1,15 @@
+
+<input type="checkbox" id="cb" onchange="submit()"/> CheckBox <br /><br />
+
+<input type="button" id="chk" value="submit" disabled/>
+
+<script type="text/javascript">
+    function submit() {
+        var cb = document.getElementById("cb");
+        if (cb.checked) {
+            document.getElementById('chk').disabled = !true; 
+        } else {
+            document.getElementById('chk').disabled = true; 
+        }
+    }
+</script>
